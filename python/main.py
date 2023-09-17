@@ -16,7 +16,7 @@ def binary_search(array: list, n: int):
             return (
                 split_index
                 if start_index == 0
-                else start_index - 1 + array_length - split_index
+                else start_index + (array_length - 1) - split_index
             )
 
 
