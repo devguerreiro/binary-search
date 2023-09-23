@@ -13,11 +13,7 @@ def binary_search(array: list, n: int):
             start_index += split_index + 1
             array = array[split_index + 1 :]
         elif value == n:
-            return (
-                split_index
-                if start_index == 0
-                else start_index + (array_length - 1) - split_index
-            )
+            return split_index if start_index == 0 else start_index + split_index
 
 
 if __name__ == "__main__":
