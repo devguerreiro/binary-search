@@ -9,9 +9,7 @@ function binarySearch(array: number[], n: number) {
         if (value === undefined) {
             return -1;
         } else if (value === n) {
-            return startIndex === 0
-                ? splitIndex
-                : startIndex + (arrayLength - 1) - splitIndex;
+            return startIndex === 0 ? splitIndex : startIndex + splitIndex;
         } else if (value > n) {
             // go to the left
             array = array.slice(0, splitIndex);
